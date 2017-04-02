@@ -1,0 +1,52 @@
+﻿<Page x:Class="GymTracker.Views.LoginToAccount"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GymTracker.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="350"
+      Title="LoginToAccount">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="1" Content="Login:" FontWeight="bold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,200,0"/>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Label Content="Username:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Content="Password:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"/>
+            
+            <TextBox Grid.Row="0" Grid.Column="1" Width="150" Height="30" Name="UsernameBox" VerticalContentAlignment="Center"/>
+            <PasswordBox Grid.Row="1" Grid.Column="1" Width="150" Height="30" Name="PasswordBox" VerticalContentAlignment="Center"/>
+        </Grid>
+        
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            
+            <Button Content="Login" Background="White" Width="95" Height="40" Name="LoginButton" Click="LoginButton_OnClick" Margin="15,0,0,0"/>
+            <Button Content="Create" Background="White" Width="95" Height="40" Grid.Column="1" Name="CreateAccount" Click="CreateAccount_OnClick"/>
+            <Button Content="Reset Password" Background="White" Width="95" Height="40" Grid.Column="2" Name="ResetPassword" Click="ResetPassword_OnClick" Margin="0,0,15,0"/>
+        </Grid>
+    </Grid>
+</Page>

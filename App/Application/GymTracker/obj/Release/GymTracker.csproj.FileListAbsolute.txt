@@ -14,3 +14,5 @@ E:\GymTracker\App\Application\GymTracker\obj\Release\GymTracker.Properties.Resou
 E:\GymTracker\App\Application\GymTracker\obj\Release\GymTracker.csproj.GenerateResource.Cache
 E:\GymTracker\App\Application\GymTracker\obj\Release\GymTracker.exe
 E:\GymTracker\App\Application\GymTracker\obj\Release\GymTracker.pdb
+E:\GymTracker\App\Application\GymTracker\obj\Release\Views\LoginToAccount.g.cs
+E:\GymTracker\App\Application\GymTracker\obj\Release\Views\LoginToAccount.baml
