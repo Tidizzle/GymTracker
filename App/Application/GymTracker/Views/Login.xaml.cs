@@ -13,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GymTracker
+namespace GymTracker.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Login : Page
     {
-        public MainWindow()
+        public Login()
         {
             InitializeComponent();
-            //Height = winHeight;
-            //Width = winWidth;
-            ResizeMode = ResizeMode.NoResize;
-            MainFrame.Content = new Views.Login();
         }
     }
 }

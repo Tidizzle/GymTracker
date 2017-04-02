@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-E:\GymTracker\App\Application\GymTracker\obj\Debug\
+E:\GymTracker\App\Application\GymTracker\obj\Release\
 GymTracker
 none
 false
-DEBUG;TRACE
+TRACE
 E:\GymTracker\App\Application\GymTracker\App.xaml
 2-1542128202
 
-10-74952568
+6857557768
 13738642453
 MainWindow.xaml;Views\Login.xaml;
 
