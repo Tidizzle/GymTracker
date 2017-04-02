@@ -1,0 +1,14 @@
+E:\GymTracker\App\Application\GymTracker\bin\Debug\GymTracker.exe.config
+E:\GymTracker\App\Application\GymTracker\bin\Debug\GymTracker.exe
+E:\GymTracker\App\Application\GymTracker\bin\Debug\GymTracker.pdb
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker.csprojResolveAssemblyReference.cache
+E:\GymTracker\App\Application\GymTracker\obj\Debug\MainWindow.g.cs
+E:\GymTracker\App\Application\GymTracker\obj\Debug\App.g.cs
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker_MarkupCompile.cache
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker_MarkupCompile.lref
+E:\GymTracker\App\Application\GymTracker\obj\Debug\MainWindow.baml
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker.g.resources
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker.Properties.Resources.resources
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker.csproj.GenerateResource.Cache
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker.exe
+E:\GymTracker\App\Application\GymTracker\obj\Debug\GymTracker.pdb
