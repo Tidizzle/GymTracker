@@ -20,9 +20,12 @@ namespace GymTracker.Views
     /// </summary>
     public partial class CreateAccount : Page
     {
-        public CreateAccount()
+        private Login ParentWin;
+
+        public CreateAccount(Login Parent)
         {
             InitializeComponent();
+            ParentWin = Parent;
         }
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
@@ -32,7 +35,7 @@ namespace GymTracker.Views
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-
+            ParentWin.LoginFrame.Content = ParentWin.LoginInstnc;
         }
     }
 }

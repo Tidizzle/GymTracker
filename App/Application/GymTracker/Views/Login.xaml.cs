@@ -30,7 +30,7 @@ namespace GymTracker.Views
 
             LoginFramePub = LoginFrame;
             LoginInstnc = new LoginToAccount(this);
-            CreateInstnc = new CreateAccount();
+            CreateInstnc = new CreateAccount(this);
 
             LoginFrame.Content = LoginInstnc;
         }
