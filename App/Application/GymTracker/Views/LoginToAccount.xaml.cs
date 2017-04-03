@@ -21,19 +21,22 @@ namespace GymTracker.Views
     /// </summary>
     public partial class LoginToAccount : Page
     {
-        public LoginToAccount()
+        private Login ParentWin;
+
+        public LoginToAccount(Login parent)
         {
             InitializeComponent();
+            ParentWin = parent;
         }
 
         private void LoginButton_OnClick(object sender, RoutedEventArgs e)
         {
-            var Log = new Extensions.Debug.Log("TestLog.txt", Extensions.Debug.Log.LogType.TimeStamp);
-            Log.WriteToLog("LoginButtonClicked");
+            
         }
 
         private void CreateAccount_OnClick(object sender, RoutedEventArgs e)
         {
+            ParentWin.LoginFrame.Content = ParentWin.CreateInstnc;
             
         }
 

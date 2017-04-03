@@ -16,23 +16,23 @@ using System.Windows.Shapes;
 namespace GymTracker.Views
 {
     /// <summary>
-    /// Interaction logic for Login.xaml
+    /// Interaction logic for CreateAccount.xaml
     /// </summary>
-    public partial class Login : Page
+    public partial class CreateAccount : Page
     {
-        public Frame LoginFramePub;
-        public LoginToAccount LoginInstnc;
-        public CreateAccount CreateInstnc;
-
-        public Login()
+        public CreateAccount()
         {
             InitializeComponent();
+        }
 
-            LoginFramePub = LoginFrame;
-            LoginInstnc = new LoginToAccount(this);
-            CreateInstnc = new CreateAccount();
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
 
-            LoginFrame.Content = LoginInstnc;
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

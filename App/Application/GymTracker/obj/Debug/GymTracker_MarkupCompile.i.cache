@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\GymTracker\App\Application\GymTracker\App.xaml
-3-2091860608
+4-457041371
 
-11-105545069
+12-1653026130
 141476787504
-MainWindow.xaml;Views\Login.xaml;Views\LoginToAccount.xaml;
+MainWindow.xaml;Views\CreateAccount.xaml;Views\Login.xaml;Views\LoginToAccount.xaml;
 
-True
+False
 

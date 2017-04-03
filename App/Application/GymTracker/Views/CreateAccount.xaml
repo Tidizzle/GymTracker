@@ -1,0 +1,63 @@
+﻿<Page x:Class="GymTracker.Views.CreateAccount"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GymTracker.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="350"
+      Title="CreateAccount">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="2*"/>
+
+           
+            <RowDefinition Height=".5*"/>
+        </Grid.RowDefinitions>
+        
+        <Label Content="Create Account:" Grid.Row="1" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,100,0"/>
+        
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="6*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Content="Username:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
+            <Label Content="Password:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+            <Label Content="Confirm:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
+            <Label Margin="5,0,0,0" Content="Security Question:" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
+            <Label Content="Answer:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4"/>
+            
+            <TextBox Name="UsernameBox" Grid.Row="0" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
+            <PasswordBox Name="PasswordBox" Grid.Row="1" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
+            <PasswordBox Name="PasswordConfirmationBox" Grid.Row="2" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
+            <TextBox Name="SecurityQuestionBox" Grid.Row="3" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
+            <TextBox Name="SecurityQuestionAnswerBox" Grid.Row="4" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
+              
+        </Grid>
+        
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button Name="CreateButton" Width="130" Height="50" Content="Create" Background="White" Click="CreateButton_Click"/>
+            <Button Width="130" Height="50" Content="Cancel" Background="White" Grid.Column="1" Click="CancelButton_Click"/>
+        </Grid>
+        
+        
+    </Grid>
+</Page>
