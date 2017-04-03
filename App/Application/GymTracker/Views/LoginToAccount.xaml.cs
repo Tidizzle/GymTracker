@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Extensions.Debug;
 
 namespace GymTracker.Views
 {
@@ -27,7 +28,8 @@ namespace GymTracker.Views
 
         private void LoginButton_OnClick(object sender, RoutedEventArgs e)
         {
-
+            var Log = new Extensions.Debug.Log("TestLog.txt", Extensions.Debug.Log.LogType.TimeStamp);
+            Log.WriteToLog("LoginButtonClicked");
         }
 
         private void CreateAccount_OnClick(object sender, RoutedEventArgs e)
