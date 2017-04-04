@@ -23,6 +23,7 @@ namespace GymTracker
         public MainWindow()
         {
             InitializeComponent();
+            Classes.AppState.LoadData();
             //Height = winHeight;
             //Width = winWidth;
             ResizeMode = ResizeMode.NoResize;
