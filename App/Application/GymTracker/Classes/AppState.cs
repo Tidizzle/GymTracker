@@ -43,5 +43,16 @@ namespace GymTracker.Classes
                 }
             });
         }
+
+        public static void AddUser(User newUser)
+        {
+            DbCon.Open();
+
+            var cmd = new SQLiteCommand($"INSERT INTO `users`(`username`,`password`,`securityques`,`securityans`) VALUES ('{newUser.Username}','{newUser.Password}','{newUser.SecurityQues}','{newUser.SecurityAns}');");
+            cmd.Connection = DbCon;
+            cmd.ExecuteNonQuery();
+            DbCon.Close();
+
+        }
     }
 }

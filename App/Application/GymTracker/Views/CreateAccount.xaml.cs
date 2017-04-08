@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GymTracker.Classes;
 
 namespace GymTracker.Views
 {
@@ -31,7 +32,43 @@ namespace GymTracker.Views
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
+            var query = from user in AppState.Userlist where user.Username == UsernameBox.Text select user;
 
+            var i = 0;
+            foreach (var user in query)
+                i++;
+
+            if (i == 0)
+            {
+                if (PasswordBox.Password == PasswordConfirmationBox.Password)
+                {
+                    var newUser = new User()
+                    {
+                        Username = UsernameBox.Text,
+                        Password = PasswordBox.Password,
+                        SecurityQues = SecurityQuestionBox.Text,
+                        SecurityAns = SecurityQuestionAnswerBox.Text
+                    };
+
+                    AppState.AddUser(newUser);
+                    AppState.LoadData();
+                    MessageBox.Show("Account Created", "Account Creation", MessageBoxButton.OK);
+                }
+                else
+                {
+                    PasswordBox.Clear();
+                    PasswordConfirmationBox.Clear();
+                    MessageBox.Show("Passwords do not match", "Create Account Error", MessageBoxButton.OK);
+                }
+            }
+            else
+            {
+                UsernameBox.Clear();
+                MessageBox.Show("Username already exists!", "Create Account Error", MessageBoxButton.OK);
+            }
+            
+
+            
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
