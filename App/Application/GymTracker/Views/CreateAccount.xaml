@@ -54,8 +54,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
-            <Button Name="CreateButton" Width="130" Height="50" Content="Create" Background="White" Click="CreateButton_Click"/>
-            <Button Width="130" Height="50" Content="Cancel" Background="White" Grid.Column="1" Click="CancelButton_Click"/>
+            <Button Name="CreateButton" Width="130" Height="40" Content="Create" Background="White" Click="CreateButton_Click"/>
+            <Button Width="130" Height="40" Content="Cancel" Background="White" Grid.Column="1" Click="CancelButton_Click"/>
         </Grid>
         
         

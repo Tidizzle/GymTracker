@@ -34,8 +34,8 @@
             <Label Content="Username:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Label Content="Password:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center"/>
             
-            <TextBox Grid.Row="0" Grid.Column="1" Width="150" Height="30" Name="UsernameBox" VerticalContentAlignment="Center"/>
-            <PasswordBox Grid.Row="1" Grid.Column="1" Width="150" Height="30" Name="PasswordBox" VerticalContentAlignment="Center"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Width="150" Height="30" Name="UsernameBox" VerticalContentAlignment="Center" TextChanged="UsernameBox_OnTextChanged"/>
+            <PasswordBox Grid.Row="1" Grid.Column="1" Width="150" Height="30" Name="PasswordBox" VerticalContentAlignment="Center" PasswordChanged="PasswordBox_OnPasswordChanged"/>
         </Grid>
         
         <Grid Grid.Row="3">
