@@ -40,11 +40,11 @@
             <Label Margin="5,0,0,0" Content="Security Question:" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
             <Label Content="Answer:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4"/>
             
-            <TextBox Name="UsernameBox" Grid.Row="0" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
-            <PasswordBox Name="PasswordBox" Grid.Row="1" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
-            <PasswordBox Name="PasswordConfirmationBox" Grid.Row="2" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
-            <TextBox Name="SecurityQuestionBox" Grid.Row="3" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
-            <TextBox Name="SecurityQuestionAnswerBox" Grid.Row="4" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center"/>
+            <TextBox Name="UsernameBox" Grid.Row="0" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center" TextChanged="UsernameBox_OnTextChanged"/>
+            <PasswordBox Name="PasswordBox" Grid.Row="1" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center" PasswordChanged="PasswordBox_OnPasswordChanged"/>
+            <PasswordBox Name="PasswordConfirmationBox" Grid.Row="2" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center" PasswordChanged="PasswordConfirmationBox_OnPasswordChanged"/>
+            <TextBox Name="SecurityQuestionBox" Grid.Row="3" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center" TextChanged="SecurityQuestionBox_OnTextChanged"/>
+            <TextBox Name="SecurityQuestionAnswerBox" Grid.Row="4" Grid.Column="1" Width="175" Height="35" VerticalContentAlignment="Center" TextChanged="SecurityQuestionAnswerBox_OnTextChanged"/>
               
         </Grid>
         

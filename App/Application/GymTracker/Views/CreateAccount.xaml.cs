@@ -37,5 +37,53 @@ namespace GymTracker.Views
         {
             ParentWin.LoginFrame.Content = ParentWin.LoginInstnc;
         }
+
+
+        private bool UNBoxEntered = false;
+        private bool PassBoxEntered = false;
+        private bool PassConfBoxEntered = false;
+        private bool SecQuesBoxEntered = false;
+        private bool SecAnsBoxEntered = false;
+
+
+        private void UsernameBox_OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(UsernameBox.Text))
+            {
+                UNBoxEntered = true;
+            }
+        }
+
+        private void PasswordBox_OnPasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(PasswordBox.Password))
+            {
+                PassBoxEntered = true;
+            }
+        }
+
+        private void PasswordConfirmationBox_OnPasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(PasswordConfirmationBox.Password))
+            {
+                PassConfBoxEntered = true;
+            }
+        }
+
+        private void SecurityQuestionBox_OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(SecurityQuestionBox.Text))
+            {
+                SecQuesBoxEntered = true;
+            }
+        }
+
+        private void SecurityQuestionAnswerBox_OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(SecurityQuestionAnswerBox.Text))
+            {
+                SecAnsBoxEntered = true;
+            }
+        }
     }
 }
