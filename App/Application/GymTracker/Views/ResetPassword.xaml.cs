@@ -16,25 +16,13 @@ using System.Windows.Shapes;
 namespace GymTracker.Views
 {
     /// <summary>
-    /// Interaction logic for Login.xaml
+    /// Interaction logic for ResetPassword.xaml
     /// </summary>
-    public partial class Login : Page
+    public partial class ResetPassword : Page
     {
-        public Frame LoginFramePub;
-        public LoginToAccount LoginInstnc;
-        public CreateAccount CreateInstnc;
-        public ResetPassword ResPasInstnc;
-
-        public Login()
+        public ResetPassword(Login parent)
         {
             InitializeComponent();
-
-            LoginFramePub = LoginFrame;
-            LoginInstnc = new LoginToAccount(this);
-            CreateInstnc = new CreateAccount(this);
-            ResPasInstnc = new ResetPassword(this);
-
-            LoginFrame.Content = LoginInstnc;
         }
     }
 }

@@ -28,3 +28,5 @@ E:\GymTracker\App\Application\GymTracker\bin\Debug\System.Data.SQLite.Linq.dll
 E:\GymTracker\App\Application\GymTracker\bin\Debug\EntityFramework.xml
 E:\GymTracker\App\Application\GymTracker\bin\Debug\EntityFramework.SqlServer.xml
 E:\GymTracker\App\Application\GymTracker\bin\Debug\System.Data.SQLite.xml
+E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\ResetPassword.g.cs
+E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\ResetPassword.baml

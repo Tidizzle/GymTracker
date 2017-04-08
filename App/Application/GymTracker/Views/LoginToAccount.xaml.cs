@@ -67,7 +67,7 @@ namespace GymTracker.Views
 
         private void ResetPassword_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            ParentWin.LoginFrame.Content = ParentWin.ResPasInstnc;
         }
 
         private bool UNEntered = false;

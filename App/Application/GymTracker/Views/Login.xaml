@@ -22,6 +22,6 @@
         <Label Content="Tracker" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="75" Margin="0,100,0,0"/>
 
         <!-- Right Side frame-->
-        <Frame Name="LoginFrame" Grid.Column="1" NavigationUIVisibility="Hidden" />
+        <Frame Name="LoginFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Page>

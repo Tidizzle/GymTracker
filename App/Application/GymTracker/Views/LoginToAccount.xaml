@@ -48,7 +48,7 @@
             
             <Button Content="Login" Background="White" Width="95" Height="40" Name="LoginButton" Click="LoginButton_OnClick" Margin="15,0,0,0"/>
             <Button Content="Create" Background="White" Width="95" Height="40" Grid.Column="1" Name="CreateAccount" Click="CreateAccount_OnClick"/>
-            <Button Content="Reset Password" Background="White" Width="95" Height="40" Grid.Column="2" Name="ResetPassword" Click="ResetPassword_OnClick" Margin="0,0,15,0"/>
+            <Button Content="Reset Password" Background="White" Width="95" Height="40" Grid.Column="2" Name="ResetPassword" Click="ResetPassword_OnClick" Margin="0,18,22,17"/>
         </Grid>
     </Grid>
 </Page>
