@@ -26,6 +26,7 @@ namespace GymTracker.Views
         {
             InitializeComponent();
             ParentWin = Parent;
+            CreateButton.IsEnabled = false;
         }
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
@@ -51,6 +52,14 @@ namespace GymTracker.Views
             if (!string.IsNullOrWhiteSpace(UsernameBox.Text))
             {
                 UNBoxEntered = true;
+                if (UNBoxEntered && PassBoxEntered && PassConfBoxEntered && SecQuesBoxEntered && SecAnsBoxEntered)
+                {
+                    CreateButton.IsEnabled = true;
+                }
+            }
+            else
+            {
+                CreateButton.IsEnabled = false;
             }
         }
 
@@ -59,6 +68,14 @@ namespace GymTracker.Views
             if (!string.IsNullOrWhiteSpace(PasswordBox.Password))
             {
                 PassBoxEntered = true;
+                if (UNBoxEntered && PassBoxEntered && PassConfBoxEntered && SecQuesBoxEntered && SecAnsBoxEntered)
+                {
+                    CreateButton.IsEnabled = true;
+                }
+            }
+            else
+            {
+                CreateButton.IsEnabled = false;
             }
         }
 
@@ -67,6 +84,14 @@ namespace GymTracker.Views
             if (!string.IsNullOrWhiteSpace(PasswordConfirmationBox.Password))
             {
                 PassConfBoxEntered = true;
+                if (UNBoxEntered && PassBoxEntered && PassConfBoxEntered && SecQuesBoxEntered && SecAnsBoxEntered)
+                {
+                    CreateButton.IsEnabled = true;
+                }
+            }
+            else
+            {
+                CreateButton.IsEnabled = false;
             }
         }
 
@@ -75,6 +100,14 @@ namespace GymTracker.Views
             if (!string.IsNullOrWhiteSpace(SecurityQuestionBox.Text))
             {
                 SecQuesBoxEntered = true;
+                if (UNBoxEntered && PassBoxEntered && PassConfBoxEntered && SecQuesBoxEntered && SecAnsBoxEntered)
+                {
+                    CreateButton.IsEnabled = true;
+                }
+            }
+            else
+            {
+                CreateButton.IsEnabled = false;
             }
         }
 
@@ -83,6 +116,14 @@ namespace GymTracker.Views
             if (!string.IsNullOrWhiteSpace(SecurityQuestionAnswerBox.Text))
             {
                 SecAnsBoxEntered = true;
+                if (UNBoxEntered && PassBoxEntered && PassConfBoxEntered && SecQuesBoxEntered && SecAnsBoxEntered)
+                {
+                    CreateButton.IsEnabled = true;
+                }
+            }
+            else
+            {
+                CreateButton.IsEnabled = false;
             }
         }
     }
