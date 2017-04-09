@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GymTracker.Classes;
 using GymTracker.Views.SubViews;
 
 namespace GymTracker.Views
@@ -23,7 +24,7 @@ namespace GymTracker.Views
     {
         private ResetFindAcct FindAcctInstnc;
         private frameMode ButtonMode;
-        private enum frameMode { Find, Reset}
+        private enum frameMode { Find, Question, Reset}
 
         private Login ParentWin;
 
@@ -42,7 +43,22 @@ namespace GymTracker.Views
         {
             if (ButtonMode == frameMode.Find)
             {
+                var query = from user in AppState.Userlist
+                    where user.Username == FindAcctInstnc.FindUNTextbox.Text
+                    select user;
+                var i = 0;
+                foreach (var user in query)
+                    i++;
 
+                if (i == 0)
+                {
+                    FindAcctInstnc.FindUNTextbox.Clear();
+                    MessageBox.Show("Username Not Found", "Reset Password Error", MessageBoxButton.OK);
+                }
+                else
+                {
+                    //Set frame inst to sec ques and use arg of queried user
+                }
             }
             else
             {

@@ -21,11 +21,13 @@ namespace GymTracker.Views.SubViews
     public partial class ResetFindAcct : Page
     {
         private ResetPassword ParentWin;
+        public TextBox UsernameTextbox;
 
         public ResetFindAcct(ResetPassword Parent)
         {
             InitializeComponent();
             ParentWin = Parent;
+            UsernameTextbox = FindUNTextbox;
         }
     }
 }
