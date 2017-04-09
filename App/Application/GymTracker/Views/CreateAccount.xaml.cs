@@ -63,6 +63,12 @@ namespace GymTracker.Views
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             ParentWin.LoginFrame.Content = ParentWin.LoginInstnc;
+            UsernameBox.Clear();
+            PasswordBox.Clear();
+            PasswordConfirmationBox.Clear();
+            SecurityQuestionBox.Clear();
+            SecurityQuestionAnswerBox.Clear();
+
         }
 
 

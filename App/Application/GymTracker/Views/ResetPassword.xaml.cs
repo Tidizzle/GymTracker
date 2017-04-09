@@ -64,19 +64,34 @@ namespace GymTracker.Views
                     foreach (var user in query)
                         foundUser = user;
                     
-                    ResetFrame.Content = new ResetSecurityQues(this, foundUser);
+                    SecQuesInstnc = new ResetSecurityQues(this, foundUser);
+                    ResetFrame.Content = SecQuesInstnc;
+                    ButtonMode = frameMode.Question;
+                    FrameButton.Content = "Submit";
 
                 }
             }
-            else
+            else if(ButtonMode == frameMode.Question)
             {
-                
+                if (SecQuesInstnc.ResettingUser.SecurityAns.ToUpper() == SecQuesInstnc.SecAnsBox.Text.ToUpper())
+                {
+                    //change to reset window
+                }
+                else
+                {
+                    SecQuesInstnc.AnswerTextBox.Clear();
+                    MessageBox.Show("Incorrect Answer", "Security Question Error", MessageBoxButton.OK);
+                }
             }
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             ParentWin.LoginFrame.Content = ParentWin.LoginInstnc;
+            ResetFrame.Content = FindAcctInstnc;
+            FrameButton.Content = "Find Account";
+            ButtonMode = frameMode.Find;
+            FindAcctInstnc.FindUNTextbox.Clear();
         }
     }
 }

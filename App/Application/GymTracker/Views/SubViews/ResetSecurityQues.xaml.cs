@@ -24,6 +24,7 @@ namespace GymTracker.Views.SubViews
         private ResetPassword ParentWin;
         public Label SecQuesLbl;
         public TextBox SecAnsBox;
+        internal User ResettingUser;
 
         public ResetSecurityQues(ResetPassword parent, User foundUser)
         {
@@ -34,6 +35,7 @@ namespace GymTracker.Views.SubViews
             SecAnsBox = AnswerTextBox;
 
             SecQues.Content = foundUser.SecurityQues;
+            ResettingUser = foundUser;
         }
     }
 }
