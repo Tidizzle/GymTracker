@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\GymTracker\App\Application\GymTracker\App.xaml
-5-775735442
+6-57641195
 
-11-638796823
+121997530616
 20134264902
-MainWindow.xaml;Views\CreateAccount.xaml;Views\Login.xaml;Views\LoginToAccount.xaml;Views\ResetPassword.xaml;
+MainWindow.xaml;Views\CreateAccount.xaml;Views\Login.xaml;Views\LoginToAccount.xaml;Views\ResetPassword.xaml;Views\SubViews\ResetFindAcct.xaml;
 
 False
 
