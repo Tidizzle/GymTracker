@@ -23,6 +23,7 @@ namespace GymTracker.Views
     public partial class ResetPassword : Page
     {
         private ResetFindAcct FindAcctInstnc;
+        private ResetSecurityQues SecQuesInstnc;
         private frameMode ButtonMode;
         private enum frameMode { Find, Question, Reset}
 
@@ -58,6 +59,13 @@ namespace GymTracker.Views
                 else
                 {
                     //Set frame inst to sec ques and use arg of queried user
+                    User foundUser = new User();
+
+                    foreach (var user in query)
+                        foundUser = user;
+                    
+                    ResetFrame.Content = new ResetSecurityQues(this, foundUser);
+
                 }
             }
             else

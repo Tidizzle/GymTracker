@@ -32,3 +32,5 @@ E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\ResetPassword.g.cs
 E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\ResetPassword.baml
 E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetFindAcct.g.cs
 E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetFindAcct.baml
+E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetSecurityQues.g.cs
+E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetSecurityQues.baml
