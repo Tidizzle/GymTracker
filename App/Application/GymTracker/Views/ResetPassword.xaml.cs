@@ -24,8 +24,11 @@ namespace GymTracker.Views
     {
         private ResetFindAcct FindAcctInstnc;
         private ResetSecurityQues SecQuesInstnc;
+        private ResetPasswordSub PassResetInstnc;
         private frameMode ButtonMode;
         private enum frameMode { Find, Question, Reset}
+
+        private User foundUser;
 
         private Login ParentWin;
 
@@ -59,7 +62,7 @@ namespace GymTracker.Views
                 else
                 {
                     //Set frame inst to sec ques and use arg of queried user
-                    User foundUser = new User();
+                    foundUser = new User();
 
                     foreach (var user in query)
                         foundUser = user;
@@ -75,13 +78,20 @@ namespace GymTracker.Views
             {
                 if (SecQuesInstnc.ResettingUser.SecurityAns.ToUpper() == SecQuesInstnc.SecAnsBox.Text.ToUpper())
                 {
-                    //change to reset window
+                    PassResetInstnc = new ResetPasswordSub(this,foundUser);
+                    ResetFrame.Content = PassResetInstnc;
+                    ButtonMode = frameMode.Reset;
+                    
                 }
                 else
                 {
                     SecQuesInstnc.AnswerTextBox.Clear();
                     MessageBox.Show("Incorrect Answer", "Security Question Error", MessageBoxButton.OK);
                 }
+            }
+            else if (ButtonMode == frameMode.Reset)
+            {
+                
             }
         }
 

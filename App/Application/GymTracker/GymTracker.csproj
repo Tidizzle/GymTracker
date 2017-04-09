@@ -97,6 +97,9 @@
     <Compile Include="Views\SubViews\ResetFindAcct.xaml.cs">
       <DependentUpon>ResetFindAcct.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SubViews\ResetPasswordSub.xaml.cs">
+      <DependentUpon>ResetPasswordSub.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SubViews\ResetSecurityQues.xaml.cs">
       <DependentUpon>ResetSecurityQues.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SubViews\ResetFindAcct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SubViews\ResetPasswordSub.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
