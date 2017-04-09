@@ -28,6 +28,20 @@ namespace GymTracker.Views.SubViews
             InitializeComponent();
             ParentWin = Parent;
             UsernameTextbox = FindUNTextbox;
+            ParentWin.FrameButton.IsEnabled = false;
+        }
+
+
+        private void FindUNTextbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(FindUNTextbox.Text))
+            {
+                ParentWin.FrameButton.IsEnabled = true;
+            }
+            else
+            {
+                ParentWin.FrameButton.IsEnabled = false;
+            }
         }
     }
 }

@@ -71,7 +71,7 @@ namespace GymTracker.Views
                     ResetFrame.Content = SecQuesInstnc;
                     ButtonMode = frameMode.Question;
                     FrameButton.Content = "Submit";
-
+                    FrameButton.IsEnabled = false;
                 }
             }
             else if(ButtonMode == frameMode.Question)
@@ -81,7 +81,8 @@ namespace GymTracker.Views
                     PassResetInstnc = new ResetPasswordSub(this,foundUser);
                     ResetFrame.Content = PassResetInstnc;
                     ButtonMode = frameMode.Reset;
-                    
+                    FrameButton.IsEnabled = false;
+
                 }
                 else
                 {

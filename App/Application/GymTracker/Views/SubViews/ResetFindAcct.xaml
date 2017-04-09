@@ -15,6 +15,6 @@
         </Grid.RowDefinitions>
         
         <Label Content="Enter Username:" FontSize="20" FontWeight="UltraLight" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,15,125,0"/>
-        <TextBox Name="FindUNTextbox" Grid.Row="1" Width="250" Height="30" VerticalAlignment="Top" Margin="0,15,0,0" VerticalContentAlignment="Center"/>
+        <TextBox Name="FindUNTextbox" Grid.Row="1" Width="250" Height="30" VerticalAlignment="Top" Margin="0,15,0,0" VerticalContentAlignment="Center" TextChanged="FindUNTextbox_TextChanged"/>
     </Grid>
 </Page>

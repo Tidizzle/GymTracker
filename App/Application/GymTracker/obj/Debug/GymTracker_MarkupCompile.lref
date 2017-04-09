@@ -7,4 +7,5 @@ FE:\GymTracker\App\Application\GymTracker\Views\LoginToAccount.xaml;;
 FE:\GymTracker\App\Application\GymTracker\Views\ResetPassword.xaml;;
 FE:\GymTracker\App\Application\GymTracker\Views\SubViews\ResetFindAcct.xaml;;
 FE:\GymTracker\App\Application\GymTracker\Views\SubViews\ResetSecurityQues.xaml;;
+FE:\GymTracker\App\Application\GymTracker\Views\SubViews\ResetPasswordSub.xaml;;
 

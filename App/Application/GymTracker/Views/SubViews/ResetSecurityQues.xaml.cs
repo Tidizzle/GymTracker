@@ -37,5 +37,14 @@ namespace GymTracker.Views.SubViews
             SecQues.Content = foundUser.SecurityQues;
             ResettingUser = foundUser;
         }
+
+        private void AnswerTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            if (!string.IsNullOrWhiteSpace(AnswerTextBox.Text))
+                ParentWin.FrameButton.IsEnabled = true;
+            else
+                ParentWin.FrameButton.IsEnabled = false;
+        }
     }
 }

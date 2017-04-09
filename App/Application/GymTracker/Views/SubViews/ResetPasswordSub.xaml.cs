@@ -34,5 +34,37 @@ namespace GymTracker.Views.SubViews
             PasswordBox = PasswordBoxLocal;
             PasswordConfimBox = PasswordConfBox;
         }
+
+        private bool PassBoxEntered = false;
+        private bool ConfBoxEntered = false;
+
+        private void PasswordBoxLocal_OnPasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(PasswordBox.Password))
+            {
+                PassBoxEntered = true;
+                if (ConfBoxEntered)
+                {
+                    ParentWin.FrameButton.IsEnabled = true;
+                }
+            }
+            else
+            {
+                ParentWin.FrameButton.IsEnabled = false;
+                PassBoxEntered = false;
+            }
+        }
+
+        private void PasswordConfBox_OnPasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(PasswordConfBox.Password))
+            {
+                ConfBoxEntered = true;
+                if (PassBoxEntered)
+                {
+                    ParentWin.FrameButton.IsEnabled = false;
+                }
+            }
+        }
     }
 }
