@@ -33,6 +33,7 @@ namespace GymTracker.Views.SubViews
 
             PasswordBox = PasswordBoxLocal;
             PasswordConfimBox = PasswordConfBox;
+            this.resettingUser = resettingUser;
         }
 
         private bool PassBoxEntered = false;
@@ -62,8 +63,13 @@ namespace GymTracker.Views.SubViews
                 ConfBoxEntered = true;
                 if (PassBoxEntered)
                 {
-                    ParentWin.FrameButton.IsEnabled = false;
+                    ParentWin.FrameButton.IsEnabled = true;
                 }
+            }
+            else
+            {
+                ConfBoxEntered = false;
+                ParentWin.FrameButton.IsEnabled = false;
             }
         }
     }

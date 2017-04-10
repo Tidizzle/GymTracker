@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -92,7 +93,22 @@ namespace GymTracker.Views
             }
             else if (ButtonMode == frameMode.Reset)
             {
-                
+                if (PassResetInstnc.PasswordBox.Password == PassResetInstnc.PasswordConfimBox.Password)
+                {
+                    AppState.DbCon.Open();
+                    var cmd = new SQLiteCommand();
+                    cmd.CommandText =
+                        $"UPDATE `users` SET `password`='{PassResetInstnc.PasswordBox.Password}' WHERE `username`='{PassResetInstnc.resettingUser.Username}';";
+                    cmd.Connection = AppState.DbCon;
+                    cmd.ExecuteNonQuery();
+                    AppState.DbCon.Close();
+                }
+                else
+                {
+                    PassResetInstnc.PasswordBox.Clear();
+                    PassResetInstnc.PasswordConfimBox.Clear();
+                    MessageBox.Show("Passwords do not match.", "Password Reset Error", MessageBoxButton.OK);
+                }
             }
         }
 
