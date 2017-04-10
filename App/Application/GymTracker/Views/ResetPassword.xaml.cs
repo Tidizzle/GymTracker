@@ -83,7 +83,7 @@ namespace GymTracker.Views
                     ResetFrame.Content = PassResetInstnc;
                     ButtonMode = frameMode.Reset;
                     FrameButton.IsEnabled = false;
-
+                    
                 }
                 else
                 {
@@ -102,6 +102,14 @@ namespace GymTracker.Views
                     cmd.Connection = AppState.DbCon;
                     cmd.ExecuteNonQuery();
                     AppState.DbCon.Close();
+                    MessageBox.Show("Password Reset", "Password Reset Sucessful", MessageBoxButton.OK);
+                    AppState.LoadData();
+
+                    PassResetInstnc.PasswordBox.Clear();
+                    PassResetInstnc.PasswordConfimBox.Clear();
+                    SecQuesInstnc.AnswerTextBox.Clear();
+                    ResetFrame.Content = FindAcctInstnc;
+                    ParentWin.LoginFrame.Content = ParentWin.LoginInstnc;
                 }
                 else
                 {
