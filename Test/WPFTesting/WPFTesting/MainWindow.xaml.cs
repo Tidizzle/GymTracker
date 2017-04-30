@@ -24,50 +24,44 @@ namespace WPFTesting
         {
             InitializeComponent();
 
-            
 
-            
+
+
         }
 
-        public enum Buttons {  Button1, Button2 }
 
-        bool Button1Active = false;
-        Buttons SelectedButton;
-
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private void RedButton_OnClick(object sender, RoutedEventArgs e)
         {
-            if (!Button1Active)
-            {
-                BitmapImage Image1 = new BitmapImage(new Uri("/Assets/Button1Selected.png", UriKind.Relative));
-                Button1_Image.Source = Image1;
-                Button1Active = true;
-            }
-            else
-            {
-                BitmapImage Image1 = new BitmapImage(new Uri("/Assets/Button1Passive.png", UriKind.Relative));
-                Button1_Image.Source = Image1;
-                Button1Active = false;
-            }
+            var leftcurrent = double.Parse(LeftColumn.Width.ToString());
+            leftcurrent += 25;
+
+
+            LeftColumn.Width = new GridLength(leftcurrent);
+
+            var rightcurrent = double.Parse(LeftColumn.Width.ToString());
+            rightcurrent -= 25;
+
+            RightColumn.Width = new GridLength(rightcurrent);
+
+
+
         }
 
-        private void Button1_MouseEnter(object sender, MouseEventArgs e)
+        private void BlueButton_OnClick(object sender, RoutedEventArgs e)
         {
-            if (!Button1Active)
-            {
-                BitmapImage Image1 = new BitmapImage(new Uri("/Assets/Button1RolledOver.png", UriKind.Relative));
-                Button1_Image.Source = Image1;
 
-                
-            }
-        }
+            var leftcurrent = double.Parse(LeftColumn.Width.ToString());
+            leftcurrent -= 25;
 
-        private void Button1_MouseLeave(object sender, MouseEventArgs e)
-        {
-            if (!Button1Active)
-            {
-                BitmapImage Image1 = new BitmapImage(new Uri("/Assets/Button1Passive.png", UriKind.Relative));
-                Button1_Image.Source = Image1;
-            }
+
+            LeftColumn.Width = new GridLength(leftcurrent);
+
+            var rightcurrent = double.Parse(LeftColumn.Width.ToString());
+            rightcurrent += 25;
+
+            RightColumn.Width = new GridLength(rightcurrent);
+
+
         }
     }
 }

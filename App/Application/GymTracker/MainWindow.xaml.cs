@@ -24,10 +24,8 @@ namespace GymTracker
         {
             InitializeComponent();
             Classes.AppState.LoadData();
-            //Height = winHeight;
-            //Width = winWidth;
             ResizeMode = ResizeMode.NoResize;
-            MainFrame.Content = new Views.Login();
+            MainFrame.Content = new Views.Login(this);
         }
     }
 }

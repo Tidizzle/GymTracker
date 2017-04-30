@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GymTracker.Classes;
 
 namespace GymTracker.Views
 {
@@ -24,8 +25,9 @@ namespace GymTracker.Views
         public LoginToAccount LoginInstnc;
         public CreateAccount CreateInstnc;
         public ResetPassword ResPasInstnc;
+        public MainWindow Parent;
 
-        public Login()
+        public Login(MainWindow ParentWin)
         {
             InitializeComponent();
 
@@ -33,8 +35,14 @@ namespace GymTracker.Views
             LoginInstnc = new LoginToAccount(this);
             CreateInstnc = new CreateAccount(this);
             ResPasInstnc = new ResetPassword(this);
+            Parent = ParentWin;
 
             LoginFrame.Content = LoginInstnc;
+        }
+
+        public void LoginUser(User Account)
+        {
+            
         }
     }
 }
