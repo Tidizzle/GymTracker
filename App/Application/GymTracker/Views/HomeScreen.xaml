@@ -30,6 +30,8 @@
 
                 <Button Width="50" Height="50" Content="&lt;" FontSize="25" Name="ChangeSizeButton" Click="ChangeSizeButton_OnClick" HorizontalAlignment="Right" Margin="0,0,20,0"/>
                 
+                
+                
             </Grid>
             
             <Grid Background="White" Grid.Column="1">
