@@ -16,5 +16,5 @@ E:\GymTracker\App\Application\GymTracker\App.xaml
 20134264902
 MainWindow.xaml;Views\CreateAccount.xaml;Views\HomeScreen.xaml;Views\Login.xaml;Views\LoginToAccount.xaml;Views\ResetPassword.xaml;Views\SubViews\ResetFindAcct.xaml;Views\SubViews\ResetPasswordSub.xaml;Views\SubViews\ResetSecurityQues.xaml;
 
-True
+False
 

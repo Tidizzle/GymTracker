@@ -10,8 +10,8 @@
 
     <Grid Background="Gray">
         <Grid.RowDefinitions>
-            <RowDefinition Height="160"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
         
         <Grid Grid.Row="1" Background="White">
@@ -21,8 +21,14 @@
             </Grid.ColumnDefinitions>
 
             <Grid Background="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
                 
-                <Border Width="4" BorderBrush="DarkGray" BorderThickness="100" HorizontalAlignment="Right"/>
+                <Border Grid.RowSpan="10" Width="4" BorderBrush="DarkGray" BorderThickness="100" HorizontalAlignment="Right"/>
+
+                <Button Width="50" Height="50" Content="&lt;" FontSize="25" Name="ChangeSizeButton" Click="ChangeSizeButton_OnClick" HorizontalAlignment="Right" Margin="0,0,20,0"/>
                 
             </Grid>
             

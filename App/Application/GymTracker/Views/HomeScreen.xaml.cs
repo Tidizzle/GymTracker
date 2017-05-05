@@ -23,6 +23,33 @@ namespace GymTracker.Views
         public HomeScreen()
         {
             InitializeComponent();
+            extended = true;
         }
+
+        private bool extended;
+        private GridLength maxWidth = new GridLength(266);
+        private GridLength minWidth = new GridLength(100);
+
+        private void ChangeSizeButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (extended)
+            {
+                MenuBar.Width = minWidth;
+                extended = false;
+                ChangeSizeButton.Content = ">";
+                ChangeSizeButton.Margin = new Thickness(0,0,0,0);
+                ChangeSizeButton.HorizontalAlignment = HorizontalAlignment.Center;
+            }
+            else
+            {
+                MenuBar.Width = maxWidth;
+                extended = true;
+                ChangeSizeButton.Content = "<";
+                ChangeSizeButton.Margin = new Thickness(0,0,20,0);
+                ChangeSizeButton.HorizontalAlignment = HorizontalAlignment.Right;
+            }
+        }
+
+
     }
 }

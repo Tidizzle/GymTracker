@@ -36,3 +36,5 @@ E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetSecurityQ
 E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetSecurityQues.baml
 E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetPasswordSub.g.cs
 E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\SubViews\ResetPasswordSub.baml
+E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\HomeScreen.g.cs
+E:\GymTracker\App\Application\GymTracker\obj\Debug\Views\HomeScreen.baml

@@ -25,7 +25,11 @@ namespace GymTracker
             InitializeComponent();
             Classes.AppState.LoadData();
             ResizeMode = ResizeMode.NoResize;
-            MainFrame.Content = new Views.Login(this);
+            //MainFrame.Content = new Views.Login(this);   Remove when returning to normal
+
+            this.Width = 1300;
+            this.Height = 800;
+            MainFrame.Content = new Views.HomeScreen();
         }
     }
 }
