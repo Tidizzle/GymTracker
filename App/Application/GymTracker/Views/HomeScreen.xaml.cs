@@ -51,5 +51,22 @@ namespace GymTracker.Views
         }
 
 
+        private void Menu_OnMouseEnter(object sender, MouseEventArgs e)
+        {
+            if (!extended)
+            {
+                MenuBar.Width = maxWidth;
+                extended = true;
+            }
+        }
+
+        private void Menu_OnMouseLeave(object sender, MouseEventArgs e)
+        {
+            if (extended)
+            {
+                MenuBar.Width = minWidth;
+                extended = false;
+            }
+        }
     }
 }

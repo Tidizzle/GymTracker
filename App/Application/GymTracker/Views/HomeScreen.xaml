@@ -20,7 +20,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Grid Background="LightGray">
+            <Grid Background="LightGray"  MouseEnter="Menu_OnMouseEnter" MouseLeave="Menu_OnMouseLeave">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="8*"/>
@@ -28,7 +28,7 @@
                 
                 <Border Grid.RowSpan="10" Width="4" BorderBrush="DarkGray" BorderThickness="100" HorizontalAlignment="Right"/>
 
-                <Button Width="50" Height="50" Content="&lt;" FontSize="25" Name="ChangeSizeButton" Click="ChangeSizeButton_OnClick" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+                <Button Width="50" Height="50" Content="&lt;" FontSize="25" Name="ChangeSizeButton" Click="ChangeSizeButton_OnClick" HorizontalAlignment="Right" Margin="0,0,20,0" IsEnabled="False"/>
                 
                 
                 
