@@ -27,6 +27,7 @@ namespace GymTracker
             ResizeMode = ResizeMode.NoResize;
             //MainFrame.Content = new Views.Login(this);   Remove when returning to normal
 
+            ResizeMode = ResizeMode.CanResize;
             this.Width = 1300;
             this.Height = 800;
             MainFrame.Content = new Views.HomeScreen();

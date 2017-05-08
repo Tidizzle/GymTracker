@@ -28,7 +28,7 @@
                 
                 <Border Grid.RowSpan="10" Width="4" BorderBrush="DarkGray" BorderThickness="100" HorizontalAlignment="Right"/>
 
-                <Button Width="50" Height="50" Content="&lt;" FontSize="25" Name="ChangeSizeButton" Click="ChangeSizeButton_OnClick" HorizontalAlignment="Right" Margin="0,0,20,0" IsEnabled="False"/>
+                <Button Width="50" Height="50" Content="*" FontSize="35" Name="ChangeSizeButton" Click="LockMenuButton_OnClick" HorizontalAlignment="Right" Margin="0,0,20,0" />
                 
                 
                 

@@ -24,15 +24,27 @@ namespace GymTracker.Views
         {
             InitializeComponent();
             extended = true;
+            locked = false;
+            MenuBar.Width = minWidth;
         }
 
         private bool extended;
+        private bool locked;
         private GridLength maxWidth = new GridLength(266);
         private GridLength minWidth = new GridLength(100);
 
-        private void ChangeSizeButton_OnClick(object sender, RoutedEventArgs e)
+        private void LockMenuButton_OnClick(object sender, RoutedEventArgs e)
         {
-            if (extended)
+            if (locked)
+            {
+                locked = false;
+            }
+            else
+            {
+                locked = true;
+            }
+
+            /*if (extended)
             {
                 MenuBar.Width = minWidth;
                 extended = false;
@@ -47,25 +59,31 @@ namespace GymTracker.Views
                 ChangeSizeButton.Content = "<";
                 ChangeSizeButton.Margin = new Thickness(0,0,20,0);
                 ChangeSizeButton.HorizontalAlignment = HorizontalAlignment.Right;
-            }
+            }*/
         }
 
 
         private void Menu_OnMouseEnter(object sender, MouseEventArgs e)
         {
-            if (!extended)
+            if (!locked)
             {
-                MenuBar.Width = maxWidth;
-                extended = true;
+                if (!extended)
+                {
+                    MenuBar.Width = maxWidth;
+                    extended = true;
+                }
             }
         }
 
         private void Menu_OnMouseLeave(object sender, MouseEventArgs e)
         {
-            if (extended)
+            if (!locked)
             {
-                MenuBar.Width = minWidth;
-                extended = false;
+                if (extended)
+                {
+                    MenuBar.Width = minWidth;
+                    extended = false;
+                }
             }
         }
     }
