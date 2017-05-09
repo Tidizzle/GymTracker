@@ -44,22 +44,6 @@ namespace GymTracker.Views
                 locked = true;
             }
 
-            /*if (extended)
-            {
-                MenuBar.Width = minWidth;
-                extended = false;
-                ChangeSizeButton.Content = ">";
-                ChangeSizeButton.Margin = new Thickness(0,0,0,0);
-                ChangeSizeButton.HorizontalAlignment = HorizontalAlignment.Center;
-            }
-            else
-            {
-                MenuBar.Width = maxWidth;
-                extended = true;
-                ChangeSizeButton.Content = "<";
-                ChangeSizeButton.Margin = new Thickness(0,0,20,0);
-                ChangeSizeButton.HorizontalAlignment = HorizontalAlignment.Right;
-            }*/
         }
 
 
